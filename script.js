@@ -25,8 +25,8 @@ function generatePassword() {
   var length = prompt("Input length of password between 1-128");
   var lower = confirm("Include lowercase?");
   var upper = confirm("Include uppercase?");
-  var numbers = confirm("Include numbers?");
-  var symbols = confirm("Include symbols?");
+  var numberInclude = confirm("Include numbers?");
+  var symbolInclude = confirm("Include symbols?");
   var types = 0;
 
 
@@ -42,13 +42,13 @@ function generatePassword() {
      types++;
    
    }
-   if (numbers) {
+   if (numbersInclude) {
     var password =+ numbers.charAt(Math.floor(Math.random() 
      * numbers.length + 1)); 
      types++;
    
    }
-   if (symbols) {
+   if (symbolInclude) {
     var password =+ symbols.charAt(Math.floor(Math.random() 
      * symbols.length + 1)); 
      types++;
