@@ -8,3 +8,4 @@ In order to practice newly learned Javascript skills, it was important to apply 
 
 Follow the link to the live website, when the press the purple button the window will generate a text box asking the length of the password you would like between 8 - 128, then you will select Ok or Cancel to determine if you would like to include the following, uppercase letters, lowercase letters, numbers, and symbols.  After all selections have been made, the site will generate you a random password with your selected paramaters.  
 
+![websitess](assets/websitess.png)
