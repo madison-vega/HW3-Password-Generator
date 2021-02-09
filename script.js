@@ -7,7 +7,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
 
 }
@@ -22,7 +22,7 @@ function generatePassword() {
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "1234567890";
   var symbols = "!@#$%^&*()";
-  var length = prompt("Input length of password between 1-128");
+  var length = prompt("Input length of password between 8-128");
   var lower = confirm("Include lowercase?");
   var upper = confirm("Include uppercase?");
   var numberInclude = confirm("Include numbers?");
@@ -42,7 +42,7 @@ function generatePassword() {
      possibleChars += upperCase
    
    }
-   if (numbersInclude) {
+   if (numberInclude) {
     var password =+ numbers.charAt(Math.floor(Math.random() 
      * numbers.length + 1)); 
      possibleChars += numbers
@@ -61,7 +61,9 @@ function generatePassword() {
      
    }
 
+   
 }
+
 
 
 
